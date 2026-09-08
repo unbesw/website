@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects &amp; Initiatives — ESW UNB</title>
-  <meta name="description" content="Ongoing, completed, and archived projects from the ESW chapter at the University of New Brunswick." />
+  <title>Projects &amp; Initiatives | ESW UNB</title>
+  <meta name="description" content="Ongoing and completed projects from the ESW chapter at the University of New Brunswick." />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +28,7 @@
         <li><a href="projects.html" aria-current="page">Projects</a></li>
         <li><a href="team.html">Team</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a class="nav__cta" href="https://www.eswglobal.org" target="_blank" rel="noopener">ESW National ↗</a></li>
+        <li><a class="nav__cta" href="https://www.eswglobal.org" target="_blank" rel="noopener">ESW National &#8599;</a></li>
       </ul>
     </div>
   </header>
@@ -40,8 +40,8 @@
           <p class="kicker">Our work</p>
           <h2 id="page-h">Projects &amp; initiatives</h2>
           <p class="lead">
-            Everything our chapter is building, has built, or has shelved for
-            now. Each project is labelled so you can see where it stands.
+            What our chapter is building right now, plus the work we've already
+            finished. Each project is labelled so you can see where it stands.
           </p>
         </div>
 
@@ -54,78 +54,131 @@
 
         <!-- =========================================================
              HOW TO ADD OR EDIT A PROJECT
-             Copy one <article> block below and change:
-               1. data-status="ongoing" | "completed" | "discontinued"
-                  (this colours the left border)
-               2. the <span class="tag tag--..."> to the MATCHING status
-                  ongoing -> tag--ongoing, "Ongoing"
-                  completed -> tag--completed, "Completed" (or "Stored")
-                  discontinued -> tag--discontinued, "Discontinued"
-               3. the title, meta line, and description
+             - Copy an <article class="project"> block.
+             - Set data-status to ongoing, completed, or discontinued
+               (this colours the left border) and match the <span class="tag">.
+             - To add a poster: give the article the extra class
+               "project--media" and add the <a class="project__poster"> block.
+               Put the image in assets/ first.
+             - To add a link: use the <p class="project__links"> block.
              ========================================================= -->
         <div class="projects">
 
-          <!-- ONGOING ------------------------------------------------ -->
+          <!-- LAB COAT INITIATIVE (ongoing) --------------------- -->
           <article class="project" data-status="ongoing">
-            <div>
-              <h3>Project name</h3>
-              <p class="project__meta">Started 2025 · Project lead: TBD</p>
+            <div class="project__main">
+              <div class="project__head">
+                <h3>Lab Coat Initiative</h3>
+                <span class="tag tag--ongoing">Ongoing</span>
+              </div>
               <p class="project__desc">
-                Describe the project and the sustainability challenge it
-                addresses. What are you designing or building, and who benefits?
+                A secondhand lab coat rental program that gives students
+                affordable access to lab coats while keeping usable coats out of
+                the landfill. Instead of buying new, students rent a coat for the
+                term and return it to be cleaned and reused.
+              </p>
+              <p class="project__links">
+                <a class="project__link" href="https://www.instagram.com/p/DUV1h_OjiEq/?utm_source=ig_web_copy_link&amp;stkn=MzRlODBiNWFlZA==" target="_blank" rel="noopener">View on Instagram &#8599;</a>
               </p>
             </div>
-            <span class="tag tag--ongoing">Ongoing</span>
           </article>
 
+          <!-- PET EXTRUSION (ongoing) --------------------------- -->
           <article class="project" data-status="ongoing">
-            <div>
-              <h3>Second active project</h3>
-              <p class="project__meta">Started 2024 · Team of 6</p>
+            <div class="project__main">
+              <div class="project__head">
+                <h3>PET Extrusion</h3>
+                <span class="tag tag--ongoing">Ongoing</span>
+              </div>
               <p class="project__desc">
-                A short description of another current initiative your chapter
-                is working on this year.
+                Turning used PET plastic bottles into 3D printer filament. The
+                project cuts bottles into strips and extrudes them into usable
+                filament, closing the loop on plastic waste and producing
+                low-cost material for campus 3D printing.
               </p>
             </div>
-            <span class="tag tag--ongoing">Ongoing</span>
           </article>
 
-          <!-- COMPLETED / STORED ------------------------------------ -->
-          <article class="project" data-status="completed">
-            <div>
-              <h3>A completed project</h3>
-              <p class="project__meta">2023–2024</p>
+          <!-- COMPOST BIOREACTOR (ongoing) ---------------------- -->
+          <article class="project" data-status="ongoing">
+            <div class="project__main">
+              <div class="project__head">
+                <h3>Compost Bioreactor</h3>
+                <span class="tag tag--ongoing">Ongoing</span>
+              </div>
               <p class="project__desc">
-                Something you finished or have archived. Note the outcome — what
-                was delivered, learned, or handed off.
+                A pilot composting system that turns spent coffee grounds from
+                the campus Head Rest Cafe into usable compost for UNB
+                landscaping. The enclosed, aerated design controls odour and
+                leachate so it can run on campus, and it collects temperature and
+                moisture data to guide a future scale-up decision.
               </p>
             </div>
-            <span class="tag tag--completed">Completed</span>
           </article>
 
-          <article class="project" data-status="completed">
-            <div>
-              <h3>A stored / paused project</h3>
-              <p class="project__meta">2022–2023 · On hold</p>
+          <!-- OFFSHORE WIND CHALLENGE TEAM (ongoing) ------------ -->
+          <article class="project" data-status="ongoing">
+            <div class="project__main">
+              <div class="project__head">
+                <h3>Offshore Wind Challenge Team</h3>
+                <span class="tag tag--ongoing">Ongoing</span>
+              </div>
               <p class="project__desc">
-                Use the "Stored" label for work that's paused but could be picked
-                back up. Change the tag text below to "Stored" if you prefer.
+                A student team competing in the international Floating Wind
+                Challenge, where engineering students design a floating platform
+                for an offshore wind turbine. Our team has secured initial
+                funding and is researching materials and platform concepts as it
+                works toward an abstract, a built model, and the international
+                competition in 2027.
+              </p>
+              <p class="project__links">
+                <a class="project__link" href="https://www.floatingwindchallenge.com/faq" target="_blank" rel="noopener">About the challenge &#8599;</a>
               </p>
             </div>
-            <span class="tag tag--completed">Stored</span>
           </article>
 
-          <!-- DISCONTINUED ------------------------------------------ -->
-          <article class="project" data-status="discontinued">
-            <div>
-              <h3>A discontinued project</h3>
-              <p class="project__meta">2021–2022</p>
+          <!-- PEDAL POWER (completed, with poster) -------------- -->
+          <article class="project project--media" data-status="completed">
+            <div class="project__main">
+              <div class="project__head">
+                <h3>Pedal Power</h3>
+                <span class="tag tag--completed">Completed</span>
+              </div>
               <p class="project__desc">
-                A project the chapter has decided not to continue. Keeping it
-                here documents your history and what you learned.
+                A human-powered bicycle generator built from salvaged parts. A
+                standard bike drives a junkyard car alternator through a 16.5:1
+                belt step-up, reaching roughly 1,485 RPM at normal pedalling
+                cadence. The prototype hit a peak charging voltage of 14.41 V at
+                around 100 RPM and cost CAD $221 to build, about 6 to 8 times
+                less than comparable commercial pedal generators.
               </p>
             </div>
-            <span class="tag tag--discontinued">Discontinued</span>
+            <a class="project__poster" href="assets/pedal-power-poster.jpg" target="_blank" rel="noopener" aria-label="Open the full Pedal Power poster">
+              <img src="assets/pedal-power-poster.jpg" alt="Pedal Power project poster: Human-Powered Bicycle Micropower Generation" loading="lazy" />
+              <span class="project__caption">Tap to view the full poster</span>
+            </a>
+          </article>
+
+          <!-- NITRILE GLOVES UPCYCLING (completed, with poster) - -->
+          <article class="project project--media" data-status="completed">
+            <div class="project__main">
+              <div class="project__head">
+                <h3>Nitrile Gloves Upcycling</h3>
+                <span class="tag tag--completed">Completed</span>
+              </div>
+              <p class="project__desc">
+                Turning used nitrile gloves, a major source of lab waste, into
+                useful products instead of sending them to landfill or
+                incineration. Uncontaminated gloves are collected, shredded, and
+                hot-pressed into durable items like lab mats. A single first-year
+                biology course yielded about 1,500 gloves per term, and on-site
+                processing on campus proved feasible.
+              </p>
+            </div>
+            <a class="project__poster" href="assets/nitrile-poster.jpg" target="_blank" rel="noopener" aria-label="Open the full Nitrile Gloves Upcycling poster">
+              <img src="assets/nitrile-poster.jpg" alt="Nitrile Gloves Upcycling project poster" loading="lazy" />
+              <span class="project__caption">Tap to view the full poster</span>
+            </a>
           </article>
 
         </div>
@@ -157,11 +210,11 @@
           <a href="projects.html">Projects</a>
           <a href="team.html">Team</a>
           <a href="contact.html">Contact</a>
-          <a href="https://www.eswglobal.org" target="_blank" rel="noopener">ESW National ↗</a>
+          <a href="https://www.eswglobal.org" target="_blank" rel="noopener">ESW National &#8599;</a>
         </nav>
       </div>
       <p class="fine">
-        © <span id="year">2025</span> ESW UNB. A chapter of Engineers for a
+        &copy; <span id="year">2025</span> ESW UNB. A chapter of Engineers for a
         Sustainable World.
       </p>
     </div>

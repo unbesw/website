@@ -1,5 +1,5 @@
 /* =========================================================================
-   ESW – University of New Brunswick
+   ESW, University of New Brunswick
    Stylesheet built on the ESW National Branding Guide.
 
    Palette (from the guide):
@@ -25,7 +25,7 @@
 :root {
   --green:      #21bf27;
   --red:        #d02c06;
-  --ink:        #1f2120;   /* dark gray – primary text            */
+  --ink:        #1f2120;   /* dark gray, primary text             */
   --midnight:   #171a2b;   /* dark backgrounds                    */
   --turquoise:  #00bec4;   /* links / buttons                     */
   --gray:       #adb8b1;   /* muted                               */
@@ -105,7 +105,7 @@ p { margin: 0 0 1rem; }
 
 .section__head { max-width: 60ch; margin-bottom: 2.5rem; }
 
-/* Small kicker above headings – uses the display face, not tracked-out caps */
+/* Small kicker above headings, uses the display face, not tracked-out caps */
 .kicker {
   font-family: var(--body);
   font-weight: 700;
@@ -278,28 +278,54 @@ p { margin: 0 0 1rem; }
 
 .project {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: .5rem 1.5rem;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
   align-items: start;
   background: var(--white);
   border: 1px solid var(--pale-gray);
   border-left: 5px solid var(--gray);
   border-radius: var(--radius);
-  padding: 1.4rem 1.6rem;
+  padding: 1.5rem 1.7rem;
   box-shadow: var(--shadow);
 }
-/* Left border encodes status – structure as information */
+/* Projects with a poster get a second column to hold it. */
+.project--media { grid-template-columns: 1fr minmax(210px, 300px); }
+
+/* Left border encodes status, so structure carries the information. */
 .project[data-status="ongoing"]      { border-left-color: var(--green); }
 .project[data-status="completed"]    { border-left-color: var(--midnight); }
 .project[data-status="discontinued"] { border-left-color: var(--gray); }
 
-.project h3 { font-size: 1.3rem; margin-bottom: .2rem; }
+.project__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: .5rem;
+}
+.project__head h3 { font-size: 1.3rem; margin: 0; }
 .project__meta { color: #6b6f6d; font-size: .95rem; margin: 0 0 .5rem; }
-.project__desc { margin: 0; color: #3f423f; max-width: 68ch; }
+.project__desc { margin: 0; color: #3f423f; }
+.project__main .project__desc { max-width: 62ch; }
+
+.project__links { display: flex; flex-wrap: wrap; gap: .9rem; margin-top: .9rem; }
+.project__link { font-weight: 700; font-size: .95rem; }
+
+/* Poster thumbnail that opens the full image in a new tab */
+.project__poster { display: block; }
+.project__poster img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--pale-gray);
+  border-radius: 8px;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.project__poster:hover img { transform: translateY(-2px); box-shadow: var(--shadow); }
+.project__caption { margin: .5rem 0 0; font-size: .82rem; color: #6b6f6d; }
 
 /* Status pill */
 .tag {
-  justify-self: end;
+  flex: none;
   font-family: var(--body);
   font-weight: 700;
   font-size: .8rem;
@@ -336,7 +362,7 @@ p { margin: 0 0 1rem; }
 .member--lead { grid-column: 1 / -1; }
 .member--lead .member__body { max-width: 60ch; }
 
-/* Photo placeholder – replace the div with an <img> (see team.html) */
+/* Photo placeholder, replace the div with an <img> (see team.html) */
 .member__photo {
   aspect-ratio: 4 / 5;
   background: var(--pale-gray);
@@ -445,7 +471,6 @@ p { margin: 0 0 1rem; }
   .nav__links .nav__cta { margin-top: .5rem; text-align: center; }
 }
 
-@media (max-width: 560px) {
-  .project { grid-template-columns: 1fr; }
-  .tag { justify-self: start; }
+@media (max-width: 720px) {
+  .project--media { grid-template-columns: 1fr; }
 }

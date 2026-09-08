@@ -1,4 +1,4 @@
-// ESW UNB — small progressive-enhancement script.
+// ESW UNB small progressive-enhancement script.
 // Everything works without JS; this just improves the mobile menu.
 
 (function () {
