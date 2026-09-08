@@ -166,10 +166,12 @@ p { margin: 0 0 1rem; }
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  min-height: 68px;
+  min-height: 92px;
+  padding-block: .5rem;
 }
 .nav__brand { display: flex; align-items: center; }
-.nav__brand img { height: 40px; width: auto; }
+/* Scales with screen width: ~50px on phones up to 66px on large screens. */
+.nav__brand img { height: clamp(50px, 4.6vw, 66px); width: auto; }
 .nav__brand span { position: absolute; left: -9999px; } /* accessible name */
 
 .nav__links {
@@ -422,9 +424,11 @@ p { margin: 0 0 1rem; }
 /* ---- Responsive nav --------------------------------------------------- */
 @media (max-width: 820px) {
   .nav__toggle { display: block; }
+  .nav { min-height: 72px; }
+  .nav__brand img { height: 46px; }
   .nav__links {
     position: absolute;
-    top: 68px;
+    top: 100%;
     left: 0;
     right: 0;
     flex-direction: column;
