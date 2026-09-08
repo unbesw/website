@@ -24,9 +24,3 @@ Everything you'll want to change has a comment above it in the HTML.
 Colours, fonts (League Gothic + Source Sans 3), and usage rules follow the
 ESW National Branding Guide. Tokens live at the top of `styles.css`.
 
-## Local preview
-Open `index.html` in a browser, or run a local server:
-```
-python3 -m http.server 8000
-```
-then visit http://localhost:8000
