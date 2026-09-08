@@ -18,7 +18,7 @@
   <header class="site-header">
     <div class="wrap nav">
       <a class="nav__brand" href="index.html" aria-label="ESW UNB home">
-        <img src="assets/logo.jpg" alt="Engineers for a Sustainable World at the University of New Brunswick" />
+        <img src="assets/esw-unb-logo.jpg" alt="Engineers for a Sustainable World at the University of New Brunswick" />
       </a>
       <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -57,10 +57,8 @@
              - Copy an <article class="project"> block.
              - Set data-status to ongoing, completed, or discontinued
                (this colours the left border) and match the <span class="tag">.
-             - To add a poster: give the article the extra class
-               "project--media" and add the <a class="project__poster"> block.
-               Put the image in assets/ first.
-             - To add a link: use the <p class="project__links"> block.
+             - To link a poster or any file: put it in assets/ and add a
+               <p class="project__links"> with a link to it (see Pedal Power).
              ========================================================= -->
         <div class="projects">
 
@@ -137,8 +135,8 @@
             </div>
           </article>
 
-          <!-- PEDAL POWER (completed, with poster) -------------- -->
-          <article class="project project--media" data-status="completed">
+          <!-- PEDAL POWER (completed) -------------------------- -->
+          <article class="project" data-status="completed">
             <div class="project__main">
               <div class="project__head">
                 <h3>Pedal Power</h3>
@@ -152,15 +150,14 @@
                 around 100 RPM and cost CAD $221 to build, about 6 to 8 times
                 less than comparable commercial pedal generators.
               </p>
+              <p class="project__links">
+                <a class="project__link" href="assets/pedal-power-poster.jpg" target="_blank" rel="noopener">View poster &#8599;</a>
+              </p>
             </div>
-            <a class="project__poster" href="assets/pedal-power-poster.jpg" target="_blank" rel="noopener" aria-label="Open the full Pedal Power poster">
-              <img src="assets/pedal-power-poster.jpg" alt="Pedal Power project poster: Human-Powered Bicycle Micropower Generation" loading="lazy" />
-              <span class="project__caption">Tap to view the full poster</span>
-            </a>
           </article>
 
-          <!-- NITRILE GLOVES UPCYCLING (completed, with poster) - -->
-          <article class="project project--media" data-status="completed">
+          <!-- NITRILE GLOVES UPCYCLING (completed) ------------- -->
+          <article class="project" data-status="completed">
             <div class="project__main">
               <div class="project__head">
                 <h3>Nitrile Gloves Upcycling</h3>
@@ -174,11 +171,10 @@
                 biology course yielded about 1,500 gloves per term, and on-site
                 processing on campus proved feasible.
               </p>
+              <p class="project__links">
+                <a class="project__link" href="assets/nitrile-poster.jpg" target="_blank" rel="noopener">View poster &#8599;</a>
+              </p>
             </div>
-            <a class="project__poster" href="assets/nitrile-poster.jpg" target="_blank" rel="noopener" aria-label="Open the full Nitrile Gloves Upcycling poster">
-              <img src="assets/nitrile-poster.jpg" alt="Nitrile Gloves Upcycling project poster" loading="lazy" />
-              <span class="project__caption">Tap to view the full poster</span>
-            </a>
           </article>
 
         </div>
