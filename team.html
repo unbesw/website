@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team — ESW UNB</title>
+  <meta name="description" content="Meet the executive team of the ESW chapter at the University of New Brunswick." />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="nav__brand" href="index.html" aria-label="ESW UNB home">
+        <img src="assets/logo.jpg" alt="Engineers for a Sustainable World at the University of New Brunswick" />
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="team.html" aria-current="page">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="nav__cta" href="https://www.eswglobal.org" target="_blank" rel="noopener">ESW National ↗</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" aria-labelledby="page-h">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="kicker">Our people</p>
+          <h2 id="page-h">Meet the team</h2>
+          <p class="lead">
+            The executive team keeping the chapter running this year. Fill in
+            each person's name, a short bio, and a photo.
+          </p>
+        </div>
+
+        <!-- =========================================================
+             HOW TO ADD A PHOTO
+             Replace the placeholder div:
+               <div class="member__photo">Insert photo</div>
+             with an image, e.g.:
+               <div class="member__photo">
+                 <img src="assets/president.jpg" alt="Full name" />
+               </div>
+             Put the photo files in the assets/ folder.
+             ========================================================= -->
+        <div class="team-grid">
+
+          <!-- PRESIDENT (featured, full width) -------------------- -->
+          <article class="member member--lead">
+            <div class="member__photo">Insert photo</div>
+            <div class="member__body">
+              <h3>Full Name</h3>
+              <p class="member__role">President</p>
+              <p class="member__bio">
+                A short bio: their program/year, what they focus on in the
+                chapter, and maybe why sustainability matters to them.
+              </p>
+              <p class="member__contact">
+                <a href="mailto:name@unb.ca">Email</a>
+                <a href="#">LinkedIn</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- VP PROJECTS ----------------------------------------- -->
+          <article class="member">
+            <div class="member__photo">Insert photo</div>
+            <div class="member__body">
+              <h3>Full Name</h3>
+              <p class="member__role">VP Projects</p>
+              <p class="member__bio">Short bio goes here.</p>
+              <p class="member__contact"><a href="mailto:name@unb.ca">Email</a></p>
+            </div>
+          </article>
+
+          <!-- VP FINANCE ------------------------------------------ -->
+          <article class="member">
+            <div class="member__photo">Insert photo</div>
+            <div class="member__body">
+              <h3>Full Name</h3>
+              <p class="member__role">VP Finance</p>
+              <p class="member__bio">Short bio goes here.</p>
+              <p class="member__contact"><a href="mailto:name@unb.ca">Email</a></p>
+            </div>
+          </article>
+
+          <!-- VP INTERNAL AFFAIRS --------------------------------- -->
+          <article class="member">
+            <div class="member__photo">Insert photo</div>
+            <div class="member__body">
+              <h3>Full Name</h3>
+              <p class="member__role">VP Internal Affairs</p>
+              <p class="member__bio">Short bio goes here.</p>
+              <p class="member__contact"><a href="mailto:name@unb.ca">Email</a></p>
+            </div>
+          </article>
+
+          <!-- VP COMMUNICATIONS ----------------------------------- -->
+          <article class="member">
+            <div class="member__photo">Insert photo</div>
+            <div class="member__body">
+              <h3>Full Name</h3>
+              <p class="member__role">VP Communications</p>
+              <p class="member__bio">Short bio goes here.</p>
+              <p class="member__contact"><a href="mailto:name@unb.ca">Email</a></p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--pale" aria-labelledby="join-h">
+      <div class="wrap prose">
+        <p class="kicker">Want to lead?</p>
+        <h2 id="join-h">Roles open up every year</h2>
+        <p class="lead">
+          Interested in joining the exec or leading a project team? Reach out and
+          we'll tell you what's involved.
+        </p>
+        <a class="btn btn--primary" href="contact.html">Contact us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <strong>Engineers for a Sustainable World</strong><br />
+          University of New Brunswick chapter
+        </div>
+        <nav aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="team.html">Team</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://www.eswglobal.org" target="_blank" rel="noopener">ESW National ↗</a>
+        </nav>
+      </div>
+      <p class="fine">
+        © <span id="year">2025</span> ESW UNB. A chapter of Engineers for a
+        Sustainable World.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

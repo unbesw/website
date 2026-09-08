@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects &amp; Initiatives — ESW UNB</title>
+  <meta name="description" content="Ongoing, completed, and archived projects from the ESW chapter at the University of New Brunswick." />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="nav__brand" href="index.html" aria-label="ESW UNB home">
+        <img src="assets/logo.jpg" alt="Engineers for a Sustainable World at the University of New Brunswick" />
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="nav__cta" href="https://www.eswglobal.org" target="_blank" rel="noopener">ESW National ↗</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" aria-labelledby="page-h">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="kicker">Our work</p>
+          <h2 id="page-h">Projects &amp; initiatives</h2>
+          <p class="lead">
+            Everything our chapter is building, has built, or has shelved for
+            now. Each project is labelled so you can see where it stands.
+          </p>
+        </div>
+
+        <!-- Status legend -->
+        <div class="legend" aria-hidden="true">
+          <span class="legend__item"><span class="legend__dot legend__dot--ongoing"></span> Ongoing</span>
+          <span class="legend__item"><span class="legend__dot legend__dot--completed"></span> Completed / stored</span>
+          <span class="legend__item"><span class="legend__dot legend__dot--discontinued"></span> Discontinued</span>
+        </div>
+
+        <!-- =========================================================
+             HOW TO ADD OR EDIT A PROJECT
+             Copy one <article> block below and change:
+               1. data-status="ongoing" | "completed" | "discontinued"
+                  (this colours the left border)
+               2. the <span class="tag tag--..."> to the MATCHING status
+                  ongoing -> tag--ongoing, "Ongoing"
+                  completed -> tag--completed, "Completed" (or "Stored")
+                  discontinued -> tag--discontinued, "Discontinued"
+               3. the title, meta line, and description
+             ========================================================= -->
+        <div class="projects">
+
+          <!-- ONGOING ------------------------------------------------ -->
+          <article class="project" data-status="ongoing">
+            <div>
+              <h3>Project name</h3>
+              <p class="project__meta">Started 2025 · Project lead: TBD</p>
+              <p class="project__desc">
+                Describe the project and the sustainability challenge it
+                addresses. What are you designing or building, and who benefits?
+              </p>
+            </div>
+            <span class="tag tag--ongoing">Ongoing</span>
+          </article>
+
+          <article class="project" data-status="ongoing">
+            <div>
+              <h3>Second active project</h3>
+              <p class="project__meta">Started 2024 · Team of 6</p>
+              <p class="project__desc">
+                A short description of another current initiative your chapter
+                is working on this year.
+              </p>
+            </div>
+            <span class="tag tag--ongoing">Ongoing</span>
+          </article>
+
+          <!-- COMPLETED / STORED ------------------------------------ -->
+          <article class="project" data-status="completed">
+            <div>
+              <h3>A completed project</h3>
+              <p class="project__meta">2023–2024</p>
+              <p class="project__desc">
+                Something you finished or have archived. Note the outcome — what
+                was delivered, learned, or handed off.
+              </p>
+            </div>
+            <span class="tag tag--completed">Completed</span>
+          </article>
+
+          <article class="project" data-status="completed">
+            <div>
+              <h3>A stored / paused project</h3>
+              <p class="project__meta">2022–2023 · On hold</p>
+              <p class="project__desc">
+                Use the "Stored" label for work that's paused but could be picked
+                back up. Change the tag text below to "Stored" if you prefer.
+              </p>
+            </div>
+            <span class="tag tag--completed">Stored</span>
+          </article>
+
+          <!-- DISCONTINUED ------------------------------------------ -->
+          <article class="project" data-status="discontinued">
+            <div>
+              <h3>A discontinued project</h3>
+              <p class="project__meta">2021–2022</p>
+              <p class="project__desc">
+                A project the chapter has decided not to continue. Keeping it
+                here documents your history and what you learned.
+              </p>
+            </div>
+            <span class="tag tag--discontinued">Discontinued</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" aria-labelledby="idea-h">
+      <div class="wrap prose">
+        <p class="kicker">Have an idea?</p>
+        <h2 id="idea-h">Pitch a project</h2>
+        <p class="lead">
+          Every project starts with someone who cared enough to bring it
+          forward. If you've got an idea, we'd love to hear it.
+        </p>
+        <a class="btn btn--primary" href="contact.html">Talk to us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <strong>Engineers for a Sustainable World</strong><br />
+          University of New Brunswick chapter
+        </div>
+        <nav aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="team.html">Team</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://www.eswglobal.org" target="_blank" rel="noopener">ESW National ↗</a>
+        </nav>
+      </div>
+      <p class="fine">
+        © <span id="year">2025</span> ESW UNB. A chapter of Engineers for a
+        Sustainable World.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
